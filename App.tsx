@@ -3,12 +3,16 @@ import { DetalinScreen } from "./screens/DetalinScreen";
 import { HomeScreen } from "./screens/HomeScrenn";
 import { View, Text ,StyleSheet} from "react-native";
 import { Navigation } from "./navigation/RootStack";
+import { TabNavigation } from "./navigation/tabNavigation";
+import { DrawerNavigation } from "./navigation/DrawerNavigation";
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Navigation />
+        {/* <Navigation /> */}
+        {/* <TabNavigation/> */}
+        <DrawerNavigation/>
       </SafeAreaView>
     </SafeAreaProvider>
   )
